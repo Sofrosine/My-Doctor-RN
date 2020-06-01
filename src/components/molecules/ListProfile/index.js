@@ -1,22 +1,22 @@
 import React from 'react';
-import {StyleSheet, Text, View, Image} from 'react-native';
+import {StyleSheet, Text, View, Image, TouchableOpacity} from 'react-native';
 import {DummyUser} from '../../../assets';
 import {fonts} from '../../../utils/fonts';
 import {colors} from '../../../utils';
 
-const UserProfile = () => {
+const ListProfile = ({onPress}) => {
   return (
-    <View style={styles.container}>
+    <TouchableOpacity onPress={onPress} style={styles.container}>
       <Image source={DummyUser} style={styles.avatar} />
       <View>
         <Text style={styles.name}>Shayna Melinda</Text>
         <Text style={styles.profession}>Product Designer</Text>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 };
 
-export default UserProfile;
+export default ListProfile;
 
 const styles = StyleSheet.create({
   container: {

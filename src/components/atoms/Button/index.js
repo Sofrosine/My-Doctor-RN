@@ -3,10 +3,14 @@ import {StyleSheet, Text, TouchableOpacity} from 'react-native';
 import {colors} from '../../../utils';
 import IconOnly from './IconOnly';
 import {fonts} from '../../../utils/fonts';
+import BtnIconSend from './BtnIconSend';
 
 const Button = ({type, text, onPress, icon}) => {
   if (type === 'icon-only') {
     return <IconOnly icon={icon} onPress={onPress} />;
+  }
+  if (type === 'btn-icon-send') {
+    return <BtnIconSend icon={icon} />;
   }
 
   return (
