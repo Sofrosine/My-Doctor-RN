@@ -1,7 +1,7 @@
 import React from 'react';
 import {StyleSheet, Text, View, ScrollView} from 'react-native';
 import {
-  ListProfile,
+  HomeProfile,
   DoctorCategory,
   RatedDoctor,
   NewsItem,
@@ -19,7 +19,7 @@ const Doctor = ({navigation}) => {
         <ScrollView showsVerticalScrollIndicator={false}>
           <Gap height={30} />
           <View style={styles.sectionWrapper}>
-            <ListProfile onPress={() => navigation.navigate('UserProfile')} />
+            <HomeProfile onPress={() => navigation.navigate('UserProfile')} />
             <Text style={styles.welcome}>
               Mau konsultasi dengan siapa hari ini?
             </Text>

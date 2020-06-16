@@ -1,14 +1,14 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import {IconSendDark, IconSendLight} from '../../../assets';
 import {colors} from '../../../utils';
 
 const BtnIconSend = ({icon}) => {
   return (
-    <View style={styles.container(icon)}>
+    <TouchableOpacity style={styles.container(icon)}>
       {icon === 'send-dark' && <IconSendDark />}
       {icon === 'send-light' && <IconSendLight />}
-    </View>
+    </TouchableOpacity>
   );
 };
 

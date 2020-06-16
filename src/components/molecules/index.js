@@ -7,9 +7,10 @@ import List from './List';
 import ListHospitals from './ListHospitals';
 import ChatItem from './ChatItem';
 import InputChat from './InputChat';
-import ListProfile from './ListProfile';
+import HomeProfile from './HomeProfile';
 import Profile from './Profile';
 import ProfileItem from './ProfileItem';
+import Loading from './Loading';
 
 export {
   Header,
@@ -21,7 +22,8 @@ export {
   ListHospitals,
   ChatItem,
   InputChat,
-  ListProfile,
+  HomeProfile,
   Profile,
   ProfileItem,
+  Loading,
 };
